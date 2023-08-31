@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    
+</head>
+<body> 
+<header>
+    <nav class="navbar">
+        <div class="brand">
+            <img src="css/nanobrand.png" alt="logo">
+            <h1>NaNo Pizzas</h1>
+        </div>
+        <div class="actions">
+            <i id="menu-icon" class="bi bi-list"></i>
+        </div>
+        <ul id="menu" class="menu-list">
+            <li><a href="#Menu">Menu</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <section class="hero">
+            <img src="css/tomatequeso.png" alt="tomate queso" class="left-floating">
+            <img src="css/pizzaantropomorfica.png" alt="pizza antropomorfica" class="right-floating">
+            <div class="plate-wrapper">
+                <img  class="plate" src="css/pizzamain.png" alt="pizzamain">
+                <div class="plate-circle"></div>
+            </div>
+            <div class="hero-content">
+                <h2 class="hero-title">Las Pizzas y Pancitos de Nano !!</h2>
+                <button>
+                    <a href="https://wa.me/5491166102977" class="hero-button">Reservar ahora</a>
+                </button>
+            </div>
+        </section>
+        <section id="Menu" class="features">
+            <div class="features-wrapper">
+                <div class="feature">
+                    <h4 class="text-serif feature-title">Pizza Tradicional</h4>
+                    <p>Elaborada con ingredientes naturales. La Pizza Tradicional de tomate y queso mozarella.</p>
+                    <img src="css/pizzatradicional.jpg" alt="pizza tradicional">
+                </div>
+                <div class="feature">
+                    <h4 class="text-serif feature-title">Napolitana</h4>
+                    <p>Elaborada con ingredientes naturales. La Pizza Napolitana de queso y mozarella con morron.</p>
+                    <img src="css/napolitana.jpg" alt="napolitana">
+                </div>
+                <div class="feature">
+                    <h4 class="text-serif feature-title">Fugazeta</h4>
+                    <p>Elaborada con ingredientes naturales. La Pizza de Fugazeta tiene mucha cebolla y mozarella !.</p>
+                    <img src="css/fugazeta.jpg" alt="fugazeta">
+                </div>
+                <div class="feature">
+                    <h4 class="text-serif feature-title">Tarta de Ricota</h4>
+                    <p>Elaborado con ingredientes naturales. La Tarta de Ricota mas fresca.</p>
+                    <img src="css/ricota.jpg" alt="ricota">
+                </div>
+                <div class="feature">
+                    <h4 class="text-serif feature-title">Pan Casero</h4>
+                    <p>Elaborado con ingredientes naturales. Un pan fresco sin conservantes.</p>
+                    <img src="css/pancitos.jpg" alt="pan casero">
+                </div>
+                <div class="feature">
+                    <h4 class="text-serif feature-title">Bizcochitos</h4>
+                    <p>Elaborada con ingredientes naturales. Bizcochitos caseros sin concervantes para unos buenos mates !!.</p>
+                    <img src="css/bizcocho.jpg" alt="bizcocho">
+                </div>
+                <div class="feature">
+                    <h4 class="text-serif feature-title">Figazas Caseras</h4>
+                    <p>Elaborado con ingredientes naturales. LLeve sus figazitas caseras !!</p>
+                    <img src="css/figaza.jpg" alt="figazas">
+                </div>
+                <div class="feature">
+                    <h4 class="text-serif feature-title">Pan para Hamburguesas</h4>
+                    <p>Elaborado con ingredientes naturales. Un pan fresco sin conservantes preparado para unas hamburguesas !!.</p>
+                    <img src="css/panpaty.jpg" alt="pan de paty">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-circle"></div>
+        <div class="logo-footer">
+            <img src="css/nanobarra.png" alt="nanobarra">
+        </div>
+        <div class="links" id="contacto">
+            <ul>
+                <li>Para pedir llamar al</li>
+                <li>011 6610-2977</li>
+                <li>Salvigny 5583</li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p class="brand-copy">© Copyright 2023 - Nano Pizzas</p>
+            <p>Creado por Hector Poggi.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Agrega este script para controlar la apertura y cierre del menú
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuIcon = document.getElementById('menu-icon');
+            const menuList = document.getElementById('menu');
+
+            menuIcon.addEventListener('click', function() {
+                menuList.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

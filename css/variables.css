@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,300&family=Open+Sans:ital,wght@1,300&display=swap');
+
+:root {
+    --primary-color: #9e2a2b;
+    --secondary-color: #540b0e;
+}
+
+main {
+    font-family: "Monserrat", sans-serif;
+    overflow: hidden;
+}
+
+.text-serif {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #fff3b0;
+}

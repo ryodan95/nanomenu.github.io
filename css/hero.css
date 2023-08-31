@@ -1,0 +1,103 @@
+
+h2 {
+    font-family: var(text-serif);
+}
+
+button {
+    font-family: 'DM Sans', sans-serif;
+    border:1px solid var(--primary-color);
+    border-radius: 20px;
+    transition: all;
+    transition-duration: 300ms;
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.plate-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plate {
+    width: 130px;
+    height: auto;
+    padding: 1rem 0;
+    transform: translate(-10%);
+}
+
+.plate-circle {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    border-radius: 0 0 50% 50%;
+    transform: translate(0, -45%);
+}
+
+.hero {
+    position: relative;
+    padding-bottom: 4rem;
+    
+}
+
+.hero-title {
+    font-size: 3rem;
+    text-align: center;
+    max-width: 400px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    text-decoration: none;
+}
+
+.hero-content > button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 0.75em 1.5em;
+    border-radius: 20px;
+    border: 0;
+    width: fit-content;
+  
+}
+
+.left-floating {
+    width: 180px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform: rotate(25deg) translate(-15%, 70%);
+}
+
+.right-floating {
+    width: 120px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transform: rotate(-20deg) translate(10%, 50%);
+}
+
+.hero-button:hover {
+    cursor: pointer;
+    background: var(--secondary-color);
+    color: #335c67;
+    border: 1px solid var(--secondary-color);
+    scale: 1.26;
+    text-decoration: none;
+}
+button, .hero-content a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
